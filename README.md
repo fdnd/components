@@ -11,6 +11,6 @@ Include only the components you want to use. A visual overview of the available 
 <script>
   import { Header, Footer } from '@fdnd/components'
 </script>
-`
+
 <Header title="FDND Programma" />
 ```
