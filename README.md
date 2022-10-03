@@ -9,8 +9,8 @@ npm install @fdnd/components
 Include only the components you want to use. A visual overview of the available components is not available (yet), but (https://github.com/fdnd/components/blob/main/src/index.js)[you can find a textual overview here].
 ```svelte
 <script>
-  import { Header, Footer } from @fdnd/components
+  import { Header, Footer } from '@fdnd/components'
 </script>
-
+`
 <Header title="FDND Programma" />
 ```
