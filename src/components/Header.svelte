@@ -1,10 +1,11 @@
 <script>
-export let title = '';
-
-
+  import Logo from './partials/Logo.svelte'
+  import HvaLogo from './partials/HvaLogo.svelte'
 </script>
 
-<header class="header {variantClass}">
-  <h1>{title}</h1>
+<header class="header">
+  <Logo />
+  <a class="hva-logo" href="https://www.hva.nl/" target="_blank" rel="noopener">
+    <HvaLogo />
+  </a>
 </header>
-
