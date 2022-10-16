@@ -1,11 +1,10 @@
-<header class="header">
+<script>
+export let title = '';
 
+
+</script>
+
+<header class="header {variantClass}">
+  <h1>{title}</h1>
 </header>
 
-<style lang="scss">
-  header {
-    background: hotpink;
-    height: 100px;
-    width: 100%;
-  }
-</style>

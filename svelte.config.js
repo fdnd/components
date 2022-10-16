@@ -5,7 +5,8 @@ const config = {
 	generate: 'ssr',
 	kit: {
 		adapter: adapter()
-	}
+	},
+	
 };
 
 export default config;
