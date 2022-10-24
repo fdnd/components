@@ -1,0 +1,29 @@
+/* Font size utility classes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.large-heading {
+  font-size: clamp(2.5rem, calc(100vw / 24 *  64/60), 4rem);
+  line-height: 1; 
+  letter-spacing: -0.05em;
+}
+
+.small-heading {
+  font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}

@@ -1,0 +1,17 @@
+.header {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem clamp(1rem, calc(100vw / 24 *  80/60), 5rem) 0;
+}
+
+.header .logo svg {
+  height: 3.25rem;
+  width: auto;
+}
+
+.header .hva-logo svg {
+  width: clamp(12.5rem, calc(100vw / 24 *  300/60), 18.75rem);
+  margin-left: 1rem;
+}
