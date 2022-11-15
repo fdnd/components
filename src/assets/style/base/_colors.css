@@ -5,8 +5,40 @@
   --c-light: #fff;
 }
 
+
+body {
+	--background: var(--c-blue);
+	--highlight: var(--c-green);
+	--color: var(--c-light);
+  background-color: var(--background);
+	color: var(--color);
+}
+
+body.theme-green {
+	--background: var(--c-green);
+	--highlight: var(--c-blue);
+	--color: var(--c-blue);
+}
+
+body.theme-purple {
+	--background: var(--c-purple);
+	--highlight: var(--c-blue);
+	--color: var(--c-blue);
+}
+
+.logo-background {
+	fill: var(--background);
+}
+
+.logo-color {
+	fill: var(--highlight);
+}
+
 .color--purple {
 	color: var(--c-purple);
+}
+.color--highlight {
+	color: var(--highlight);
 }
 .color--green {
 	color: var(--c-green);
@@ -33,32 +65,4 @@
 
 .background--inherit {
 	background: var(--background);
-}
-
-
-
-body {
-	--background: var(--c-blue);
-	--highlight: var(--c-green);
-  background-color: var(--background);
-}
-
-body.theme-green {
-	--background: var(--c-green);
-	--highlight: var(--c-blue);
-  background-color: var(--background);
-}
-
-body.theme-purple {
-	--background: var(--c-purple);
-	--highlight: var(--c-blue);
-  background-color: var(--background);
-}
-
-.logo-background {
-	fill: var(--background);
-}
-
-.logo-color {
-	fill: var(--highlight);
 }

@@ -22,8 +22,20 @@ body {
   letter-spacing: -0.05em;
 }
 
+.medium-heading {
+  font-size: clamp(2rem, calc(100vw / 24 *  40/60), 2.5rem);
+  line-height: 1; 
+  letter-spacing: -0.05em;
+}
+
 .small-heading {
   font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.xsmall-body {
+  font-size: 0.875rem;
   line-height: 1;
   letter-spacing: -0.03em;
 }

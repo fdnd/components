@@ -1,28 +1,30 @@
+
+
 .rounded--left-bottom {
   --b-top: 0;
-  --b-left: -4rem;
-  --b-x: 2rem;
-  --b-y: -2rem;
+  --b-left: calc(var(--radius) * -2);
+  --b-x: var(--radius);
+  --b-y: calc(var(--radius) * -1);
   --a-top: 100%;
-  --a-left: calc(100% - 4rem);
-  --a-x: 2rem;
-  --a-y: -2rem;
+  --a-left: calc(100% - calc(var(--radius) * 2));
+  --a-x: var(--radius);
+  --a-y: calc(var(--radius) * -1);
   position: relative;
-  border-radius: 0 0 0 2rem;
+  border-radius: 0 0 0 var(--radius);
 }
 
 .rounded--right-top {
-  --b-top: -4rem;
+  --b-top: calc(var(--radius) * -2);
   --b-left: 0;
-  --b-x: -2rem;
-  --b-y: 2rem;
-  --a-top: calc(100% - 4rem);
+  --b-x: calc(var(--radius) * -1);
+  --b-y: var(--radius);
+  --a-top: calc(100% - calc(var(--radius) * 2));
   --a-left: 100%;
-  --a-x: -2rem;
-  --a-y: 2rem;
+  --a-x: calc(var(--radius) * -1);
+  --a-y: var(--radius);
   position: relative;
   z-index: 1;
-  border-radius: 0 2rem 0 0;
+  border-radius: 0 var(--radius) 0 0;
 }
 
 
@@ -32,8 +34,8 @@
   z-index: -1;
   top: var(--b-top);
   left: var(--b-left);
-  width: 4rem;
-  height: 4rem;
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
   border-radius: 50%;
   box-shadow: var(--b-x) var(--b-y) 0 0 var(--background);
 }
@@ -44,9 +46,66 @@
   z-index: -1;
   top: var(--a-top);
   left: var(--a-left);
-  width: 4rem;
-  height: 4rem;
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
   border-radius: 50%;
   box-shadow: var(--a-x) var(--a-y) 0 0 var(--background);
 }
 
+
+
+.text-block-rounding--top-right {
+  --width: calc(100vw / 24 * 2);
+  --height: calc(100vw / 24);
+  --b-top: calc(var(--radius) * -2);
+  --b-left: 0;
+  --b-x: calc(var(--radius) * -1);
+  --b-y: var(--radius);
+  --a-top: calc(100% - calc(var(--radius) * 2));
+  --a-left: calc(100% - var(--width) + 1px);
+  --a-x: calc(var(--radius) * -1);
+  --a-y: var(--radius);
+  
+  position: relative;
+  z-index: 1;
+  border-radius: calc(var(--radius) / 4);
+  border: 1px solid var(--highlight);
+  box-shadow: -4px 4px 0 0 var(--highlight);
+}
+
+
+[class*="text-block-rounding--"] .corner {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: -1px;
+  right: -1px;
+  width: var(--width);
+  height: var(--height);
+  background: var(--background);
+  border-radius: 0 0 0 calc(var(--radius)/ 4);
+  border-left: 1px solid var(--highlight);
+  border-bottom: 1px solid var(--highlight);
+}
+
+[class*="text-block-rounding--"] .corner::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: calc(var(--radius) / -2 - 1px);
+  border-radius: 0 50% 0 0;
+  width: calc(var(--radius) / 2);
+  height: calc(var(--radius) / 2);
+  box-shadow: 1px -1px 0 0 var(--highlight), 4px -4px 0 0 var(--background);
+}
+
+[class*="text-block-rounding--"] .corner::after {
+  content: '';
+  position: absolute;
+  top: var(--height);
+  right: 1px;
+  border-radius: 0 50% 0 0;
+  width: calc(var(--radius) / 2);
+  height: calc(var(--radius) / 2);
+  box-shadow: 1px -1px 0 0 var(--highlight), 4px -4px 0 0 var(--background);
+}

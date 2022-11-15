@@ -1,0 +1,8 @@
+:root {
+  --radius: 2rem;  
+}
+@media (max-width: 1024px) {
+  :root {
+    --radius: 1rem;
+  }
+}

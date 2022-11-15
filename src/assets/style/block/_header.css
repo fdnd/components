@@ -9,9 +9,11 @@
 .header .logo svg {
   height: 3.25rem;
   width: auto;
+  fill: currentColor;
 }
 
 .header .hva-logo svg {
   width: clamp(12.5rem, calc(100vw / 24 *  300/60), 18.75rem);
   margin-left: 1rem;
+  fill: currentColor;
 }

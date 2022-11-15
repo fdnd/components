@@ -1,2 +1,4 @@
+@import 'partials/_index';
 @import '_header';
 @import '_page-header';
+@import '_text-block';

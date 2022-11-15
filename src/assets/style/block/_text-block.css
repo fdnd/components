@@ -1,0 +1,8 @@
+.text-block {
+  padding: clamp(1rem, calc(100vw / 24), 4rem) clamp(1rem, calc(100vw / 24 *  80/60), 5rem);
+}
+
+.text-block-inner {
+  max-width: calc(710 / 1440 * 100vw);
+  padding: clamp(1rem, calc(100vw / 24 *  40/60), 2.5rem);
+}

@@ -1,16 +1,14 @@
 <script>
-  import Logo from './partials/Logo.svelte'
-  import HvaLogo from './partials/HvaLogo.svelte'
   export let content = {};
 </script>
 
-<section class="page-header color--light {content.image ? 'has-image': ''}">
+<section class="page-header {content.image ? 'has-image': ''}">
   <div class="page-header-inner">
     <div class="page-header-text background--inherit rounded--left-bottom">
       <p class="small-heading caps font-bold">
         {content.subtitle}
       </p>
-      <h1 class="large-heading color--green">
+      <h1 class="large-heading color--highlight">
         {content.title}
       </h1>
     </div>
