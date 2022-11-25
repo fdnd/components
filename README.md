@@ -10,7 +10,7 @@ It's a component library for FDND students and teachers. It implements the FDND 
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Use](#use)
 - [Contribute](#contribute)
 - [Publishing](#publishing)
 
@@ -24,7 +24,7 @@ npm install @fdnd/components
 
 Include only the components you want to use. A visual overview of the available components is not available (yet), but [you can find a textual overview here](https://github.com/fdnd/components/blob/main/src/index.js).
 
-## Usage
+## Use
 
 ```svelte
 <script>
