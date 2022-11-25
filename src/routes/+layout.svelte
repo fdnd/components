@@ -1,5 +1,4 @@
 <script>
-  import '$lib/styles/_basics.css';
   import Nav from '$lib/molecules/Nav.svelte';
 </script>
 

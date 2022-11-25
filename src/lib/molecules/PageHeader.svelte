@@ -1,11 +1,11 @@
 <script>
+  import '../styles/molecules/_page-header.css'
   export let content = {
     image: {},
     subtitle: false,
     title: false,
     meta: {}
   };
-  import '../styles/molecules/_page-header.css'
 </script>
 
 <section class="page-header {content.image ? 'has-image': ''}">
@@ -30,8 +30,8 @@
             <p class="font-bold caps medium-body">
               { metaItem.label }
             </p>
-            <p class="medium-body">
-              { metaItem.text }
+            <p class="page-header-value medium-body">
+              {@html metaItem.text }
             </p>
           </li>
         {/each}
