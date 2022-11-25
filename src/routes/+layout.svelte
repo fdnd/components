@@ -1,4 +1,5 @@
 <script>
+  import Nav from '$lib/molecules/Nav.svelte';
 </script>
 
 <svelte:head>
@@ -14,7 +15,7 @@
   </h1>
 </header>
 
-<nav />
+<Nav />
 
 <main>
   <slot />
