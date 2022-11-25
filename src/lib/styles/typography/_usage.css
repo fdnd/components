@@ -16,15 +16,15 @@ body {
 }
 
 .large-heading {
-  font-size: clamp(2.5rem, calc(100vw / 24 *  64/60), 4rem);
-  line-height: 1; 
+  font-size: clamp(2.5rem, calc(100vw / 24 * 64 / 60), 4rem);
+  line-height: 1;
   letter-spacing: -0.05em;
   font-weight: 800;
 }
 
 .medium-heading {
-  font-size: clamp(2rem, calc(100vw / 24 *  40/60), 2.5rem);
-  line-height: 1; 
+  font-size: clamp(2rem, calc(100vw / 24 * 40 / 60), 2.5rem);
+  line-height: 1;
   letter-spacing: -0.05em;
 }
 
