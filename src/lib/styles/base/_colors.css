@@ -1,0 +1,68 @@
+:root {
+  --c-purple: #A675F5;
+  --c-green: #66E5BF;
+  --c-blue: #050542;
+  --c-light: #fff;
+}
+
+
+body {
+	--background: var(--c-blue);
+	--highlight: var(--c-green);
+	--color: var(--c-light);
+  background-color: var(--background);
+	color: var(--color);
+}
+
+body.theme-green {
+	--background: var(--c-green);
+	--highlight: var(--c-blue);
+	--color: var(--c-blue);
+}
+
+body.theme-purple {
+	--background: var(--c-purple);
+	--highlight: var(--c-blue);
+	--color: var(--c-blue);
+}
+
+.logo-background {
+	fill: var(--background);
+}
+
+.logo-color {
+	fill: var(--highlight);
+}
+
+.color--purple {
+	color: var(--c-purple);
+}
+.color--highlight {
+	color: var(--highlight);
+}
+.color--green {
+	color: var(--c-green);
+}
+.color--blue {
+	color: var(--c-blue);
+}
+.color--light {
+	color: var(--c-light);
+}
+
+.background--purple {
+	background: var(--c-purple);
+}
+.background--green {
+	background: var(--c-green);
+}
+.background--blue {
+	background: var(--c-blue);
+}
+.background--light {
+	background: var(--c-light);
+}
+
+.background--inherit {
+	background: var(--background);
+}

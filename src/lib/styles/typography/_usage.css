@@ -1,5 +1,4 @@
 /* Font size utility classes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -20,6 +19,7 @@ body {
   font-size: clamp(2.5rem, calc(100vw / 24 *  64/60), 4rem);
   line-height: 1; 
   letter-spacing: -0.05em;
+  font-weight: 800;
 }
 
 .medium-heading {
