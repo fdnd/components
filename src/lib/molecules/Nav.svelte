@@ -4,7 +4,8 @@
   export let data = {
     title: 'Please pass a data object containing data.title and data.items, see docs for details.',
     items: {
-      Example: 'http://example.com'
+      Example: 'http://example.com',
+      'Blah die': '/blah'
     }
   };
 </script>
