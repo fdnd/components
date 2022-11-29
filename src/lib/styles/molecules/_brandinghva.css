@@ -1,0 +1,44 @@
+.branding {
+  container: brandinghva / inline-size;
+  padding: 0 1rem;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  z-index: 0;
+}
+
+.branding .hvalogo {
+  height: 2rem;
+  order: 1;
+}
+
+.branding .hvapayoff {
+  height: 1rem;
+}
+
+.branding .fdndlogo {
+  display: block;
+  height: 2rem;
+  margin-left: auto;
+  order: 3;
+}
+
+@container brandinghva (min-width: 24rem) {
+  .branding--top::before {
+    order: 2;
+    content: 'Frontend \A Design & Development';
+    display: block;
+    white-space: pre-wrap;
+    height: 2rem;
+
+    margin-left: 1rem;
+    border-left: 1px solid currentColor;
+    padding-left: 1rem;
+
+    font-size: 0.8rem;
+    line-height: 1rem;
+    z-index: 0;
+  }
+}
