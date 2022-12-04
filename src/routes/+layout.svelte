@@ -1,24 +1,18 @@
 <script>
   import Nav from '$lib/molecules/Nav.svelte';
+  import BrandingHvA from '$lib/molecules/BrandingHvA.svelte';
 </script>
 
 <svelte:head>
   <title>Frontend Design & Development | Component Library</title>
 </svelte:head>
 
-<header>
-  <h1>
-    <abbr title="Frontend Design &amp; Development">
-      <span>FDND</span>
-    </abbr>
-    <span>Component Library</span>
-  </h1>
-</header>
+<BrandingHvA>
+  <Nav />
 
-<Nav />
+  <main>
+    <slot />
+  </main>
 
-<main>
-  <slot />
-</main>
-
-<footer />
+  <footer />
+</BrandingHvA>

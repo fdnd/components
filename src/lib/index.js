@@ -4,3 +4,4 @@ import '$lib/styles/_basics.css';
 export { default as PageHeader } from './molecules/PageHeader.svelte';
 export { default as TextBlock } from './molecules/TextBlock.svelte';
 export { default as TwoColumnText } from './molecules/TwoColumnText.svelte';
+export { default as BrandingHvA } from './molecules/BrandingHvA.svelte';
