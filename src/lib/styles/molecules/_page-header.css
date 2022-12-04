@@ -53,9 +53,12 @@
 
 
 @media (max-width: 750px) {
-  .page-header-text {
+  .page-header-text, .page-header-meta {
     position: relative;
     padding: 0 1rem 1rem 0;
+  }
+  .page-header-meta {
+    padding: 1rem 1rem 1rem 0;
   }
   .page-header-text h1 {
     width: 100%;

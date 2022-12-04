@@ -1,33 +1,42 @@
 <script>
   import '../styles/molecules/_text-block.css'
   import Button from '../atoms/Button.svelte'
-  export let content = {};
+  
+  export let title = '';
+  export let text = '';
+  export let button = {
+    url: '',
+    title: ''
+  };
+  export let footnote = '';
+  export let image = {};
+  export let border = ''
 </script>
 
-<section class="text-block {content.image ? 'has-image': ''}">
-  <div class="text-block-inner {content.border ? 'text-block-rounding--' + content.border : 'text-block-rounding--top-right'}">
+<section class="text-block {image ? 'has-image': ''}">
+  <div class="text-block-inner {border ? 'border-rounding--' + border : 'border-rounding--top-right'}">
     <div class="corner"></div>
     <div class="text-block-text background--inherit">
       <h2 class="medium-heading">
-        {content.title}
+        {title}
       </h2>
       <p class="small-body">
-        {content.text}
+        {text}
       </p>
-      {#if content.button}
-        <Button url={content.button.url} title={content.button.title} />
+      {#if button}
+        <Button url={button.url} title={button.title} />
       {/if}
-      {#if content.footnote}
+      {#if footnote}
         <p class="xsmall-body">
-          {@html content.footnote}
+          {@html footnote}
         </p>
       {/if}
     </div>
   </div>
-  {#if content.image}
+  {#if image}
     <div class="text-block-image">
-      <img src={content.image.src} alt="{content.image.alt}">
-      <p class="xsmall-body">{content.image.caption}</p>
+      <img src={image.src} alt="{image.alt}">
+      <p class="xsmall-body">{image.caption}</p>
     </div>
   {/if}
 </section>

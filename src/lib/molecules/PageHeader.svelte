@@ -1,31 +1,29 @@
 <script>
   import '../styles/molecules/_page-header.css'
-  export let content = {
-    image: {},
-    subtitle: false,
-    title: false,
-    meta: {}
-  };
+  export let image = {};
+  export let subtitle = '';
+  export let title = '';
+  export let meta = {};
 </script>
 
-<section class="page-header {content.image ? 'has-image': ''}">
+<section class="page-header {image ? 'has-image': ''}">
   <div class="page-header-inner">
     <div class="page-header-text background--inherit rounded--left-bottom">
       <p class="small-heading caps font-bold">
-        {content.subtitle}
+        {subtitle}
       </p>
       <h1 class="large-heading color--highlight">
-        {content.title}
+        {title}
       </h1>
     </div>
-    {#if content.image}
+    {#if image}
       <div class="page-header-image">
-        <img src={content.image.src} alt="{content.image.alt}">
+        <img src={image.src} alt="{image.alt}">
       </div>
     {/if}
-    {#if content.meta}
+    {#if meta}
     <ul class="page-header-meta background--inherit rounded--right-top">
-        {#each content.meta as metaItem}
+        {#each meta as metaItem}
           <li class="page-header-item">
             <p class="font-bold caps medium-body">
               { metaItem.label }

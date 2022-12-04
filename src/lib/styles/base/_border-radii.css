@@ -54,7 +54,7 @@
 
 
 
-.text-block-rounding--top-right {
+.border-rounding--top-right {
   --width: calc(100vw / 24 * 2);
   --height: calc(100vw / 24);
   --b-top: calc(var(--radius) * -2);
@@ -74,7 +74,7 @@
 }
 
 
-[class*="text-block-rounding--"] .corner {
+[class*="border-rounding--"] .corner {
   position: absolute;
   display: block;
   z-index: 1;
@@ -88,7 +88,7 @@
   border-bottom: 1px solid var(--highlight);
 }
 
-[class*="text-block-rounding--"] .corner::before {
+[class*="border-rounding--"] .corner::before {
   content: '';
   position: absolute;
   top: 1px;
@@ -99,7 +99,7 @@
   box-shadow: 1px -1px 0 0 var(--highlight), 4px -4px 0 0 var(--background);
 }
 
-[class*="text-block-rounding--"] .corner::after {
+[class*="border-rounding--"] .corner::after {
   content: '';
   position: absolute;
   top: var(--height);
