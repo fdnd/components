@@ -1,68 +1,73 @@
 :root {
-  --c-purple: #A675F5;
-  --c-green: #66E5BF;
+  --c-purple: #a675f5;
+  --c-green: #66e5bf;
   --c-blue: #050542;
   --c-light: #fff;
+  --c-attention: #fffc86;
 }
 
-
 body {
-	--background: var(--c-blue);
-	--highlight: var(--c-green);
-	--color: var(--c-light);
+  --background: var(--c-blue);
+  --highlight: var(--c-green);
+  --color: var(--c-light);
+  --attention: var(--c-attention);
   background-color: var(--background);
-	color: var(--color);
+  color: var(--color);
 }
 
 body.theme-green {
-	--background: var(--c-green);
-	--highlight: var(--c-blue);
-	--color: var(--c-blue);
+  --background: var(--c-green);
+  --highlight: var(--c-blue);
+  --color: var(--c-blue);
 }
 
 body.theme-purple {
-	--background: var(--c-purple);
-	--highlight: var(--c-blue);
-	--color: var(--c-blue);
+  --background: var(--c-purple);
+  --highlight: var(--c-blue);
+  --color: var(--c-blue);
+}
+
+.branding-color {
+  fill: currentColor;
 }
 
 .logo-background {
-	fill: var(--background);
+  fill: var(--background);
 }
 
 .logo-color {
-	fill: var(--highlight);
+  fill: var(--highlight);
 }
 
 .color--purple {
-	color: var(--c-purple);
+  color: var(--c-purple);
 }
 .color--highlight {
-	color: var(--highlight);
+  color: var(--highlight);
 }
 .color--green {
-	color: var(--c-green);
+  color: var(--c-green);
 }
 .color--blue {
-	color: var(--c-blue);
+  color: var(--c-blue);
 }
 .color--light {
-	color: var(--c-light);
+  color: var(--c-light);
 }
 
 .background--purple {
-	background: var(--c-purple);
+  background: var(--c-purple);
 }
 .background--green {
-	background: var(--c-green);
+  background: var(--c-green);
 }
 .background--blue {
-	background: var(--c-blue);
+  background: var(--c-blue);
 }
 .background--light {
-	background: var(--c-light);
+  background: var(--c-light);
 }
 
 .background--inherit {
-	background: var(--background);
+  background: var(--background);
 }

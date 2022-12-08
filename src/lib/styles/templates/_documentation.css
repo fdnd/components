@@ -1,0 +1,26 @@
+.documentation {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'main main'
+    'nav nav';
+  padding: var(--component-padding);
+  gap: var(--component-padding);
+}
+
+.documentation :nth-child(1) {
+  grid-area: nav;
+}
+
+.documentation :nth-child(2) {
+  grid-area: main;
+}
+
+@media (min-width: 40rem) {
+  .documentation {
+    grid-template-areas: 'nav main';
+  }
+}

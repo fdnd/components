@@ -1,5 +1,5 @@
 .branding {
-  container: brandinghva / inline-size;
+  container: branding / inline-size;
   padding: 0 1rem;
   height: 4rem;
   width: 100%;
@@ -9,23 +9,24 @@
   z-index: 0;
 }
 
-.branding .hvalogo {
+.branding .hva-logo {
   height: 2rem;
   order: 1;
 }
 
-.branding .hvapayoff {
+.branding .hva-payoff {
   height: 1rem;
 }
 
-.branding .fdndlogo {
+.branding .fdnd-logo {
   display: block;
   height: 2rem;
   margin-left: auto;
   order: 3;
 }
 
-@container brandinghva (min-width: 24rem) {
+/* Show the subbrand on the HvA Logo on screens wider than 24rem */
+@container branding (min-width: 24rem) {
   .branding--top::before {
     order: 2;
     content: 'Frontend \A Design & Development';
@@ -40,5 +41,12 @@
     font-size: 0.8rem;
     line-height: 1rem;
     z-index: 0;
+  }
+}
+
+/* Hide the FDND logo on screens smaller than 14rem */
+@container branding (max-width: 14rem) {
+  .branding .fdnd-logo {
+    display: none;
   }
 }

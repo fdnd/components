@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  gap: var(--component-padding);
+}
+
+nav ul {
+  padding: 0;
+  min-width: 8rem;
+  margin-bottom: var(--component-padding);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav h2,
+nav h3,
+nav h4 {
+  font-size: 1rem;
+}

@@ -1,0 +1,35 @@
+.collapsing-columns {
+  container-type: inline-size;
+}
+.collapsing-columns > div {
+  display: grid;
+  margin: var(--component-padding);
+  grid-template-columns: 1fr;
+  gap: var(--component-padding);
+}
+
+@container (min-width: 40rem) {
+  .collapsing-columns > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@container (min-width: 80rem) {
+  .collapsing-columns > div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@container (min-width: 120rem) {
+  .collapsing-columns > div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* ADD COLORS FOR TESTING */
+.collapsing-columns > div :nth-child(odd) {
+  background: var(--c-green);
+}
+.collapsing-columns > div :nth-child(even) {
+  background: var(--c-purple);
+}

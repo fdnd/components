@@ -3,8 +3,23 @@
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+a,
+button,
+input {
+  font-family: inherit;
+  color: inherit;
+}
 
-h1, h2, h3, h4, h5, h6, p, a, li, span, a, button, input {
-	font-family: inherit;
-	color: inherit;
+body {
+  min-height: 100%;
 }
