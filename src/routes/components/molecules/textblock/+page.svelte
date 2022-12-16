@@ -26,4 +26,4 @@
 
 <p>It's a TextBlock!</p>
 
-<TextBlock content={textBlockContents} />
+<TextBlock {...textBlockContents} />

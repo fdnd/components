@@ -30,4 +30,4 @@
 
 <p>This is the pageheader component.</p>
 
-<PageHeader content={pageHeaderContents} />
+<PageHeader {...pageHeaderContents} />

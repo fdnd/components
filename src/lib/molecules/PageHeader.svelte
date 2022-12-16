@@ -1,9 +1,17 @@
 <script>
   import '../styles/molecules/_page-header.css'
-  export let image = {};
-  export let subtitle = '';
-  export let title = '';
-  export let meta = {};
+  export let image = {
+    src: '',
+    alt: ''
+  }
+  export let subtitle = ''
+  export let title = ''
+  export let meta = [
+    {
+      label: '',
+      text: ''
+    }
+  ]
 </script>
 
 <section class="page-header {image ? 'has-image': ''}">

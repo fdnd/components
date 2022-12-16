@@ -1,5 +1,5 @@
 // Basic style for every page
-import '$lib/styles/_basics.css';
+import './styles/_basics.css';
 
 // Molecules
 export { default as Branding } from './molecules/Branding.svelte';
