@@ -1,18 +1,21 @@
 <script>
-  import Nav from '$lib/molecules/Nav.svelte';
-  import BrandingHvA from '$lib/molecules/BrandingHvA.svelte';
+  import { Nav, Branding, Footer } from '$lib/index.js';
+
+  let menu = {
+    Menu: {
+      Home: '/',
+      Components: '/components',
+      Styleguide: '/styleguide'
+    }
+  };
 </script>
 
 <svelte:head>
-  <title>Frontend Design & Development | Component Library</title>
+  <title>FDND: Component Library</title>
 </svelte:head>
 
-<BrandingHvA>
-  <Nav />
-
-  <main>
-    <slot />
-  </main>
-
-  <footer />
-</BrandingHvA>
+<Branding>
+  <Nav data={menu} />
+  <slot />
+  <Footer />
+</Branding>

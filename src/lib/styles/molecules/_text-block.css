@@ -1,8 +1,9 @@
 .text-block {
   display: flex;
   flex-wrap: wrap;
-  padding: clamp(4rem, calc(100vw / 24), 4rem) clamp(1rem, calc(100vw / 24 *  80/60), 5rem);
-  max-width: 90rem;
+  /* Parents decide placement */
+  /* padding: clamp(4rem, calc(100vw / 24), 4rem) clamp(1rem, calc(100vw / 24 *  80/60), 5rem); */
+  /* max-width: 90rem; */
   margin: 0 auto;
 }
 
@@ -13,13 +14,13 @@
 .text-block-inner {
   max-width: calc(710 / 1440 * 100vw);
   min-width: 320px;
-  padding: clamp(1.5rem, calc(100vw / 24 *  40/60), 2.5rem) clamp(1rem, calc(100vw / 24 *  40/60), 2.5rem);
+  padding: var(--component-padding);
 }
 
 .text-block-image {
   width: 20%;
   flex-grow: 1;
-  padding-left: calc(100vw/24);
+  padding-left: calc(100vw / 24);
 }
 
 .text-block-image img {

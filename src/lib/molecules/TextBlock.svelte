@@ -1,12 +1,16 @@
 <script>
-  import '../styles/molecules/_text-block.css'
-  import Button from '../atoms/Button.svelte'
+  import '../styles/molecules/_text-block.css';
+  import Button from '../atoms/Button.svelte';
   export let content = {};
 </script>
 
-<section class="text-block {content.image ? 'has-image': ''}">
-  <div class="text-block-inner {content.border ? 'text-block-rounding--' + content.border : 'text-block-rounding--top-right'}">
-    <div class="corner"></div>
+<section class="text-block {content.image ? 'has-image' : ''}">
+  <div
+    class="text-block-inner {content.border
+      ? 'text-block-rounding--' + content.border
+      : 'text-block-rounding--top-right'}"
+  >
+    <div class="corner" />
     <div class="text-block-text background--inherit">
       <h2 class="medium-heading">
         {content.title}
@@ -26,7 +30,7 @@
   </div>
   {#if content.image}
     <div class="text-block-image">
-      <img src={content.image.src} alt="{content.image.alt}">
+      <img src={content.image.src} alt={content.image.alt} />
       <p class="xsmall-body">{content.image.caption}</p>
     </div>
   {/if}

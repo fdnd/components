@@ -1,8 +1,15 @@
 :root {
-  --radius: 2rem;  
+  --radius: 1rem;
+  --component-gap: 1rem;
+  --component-padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem)
+    clamp(1rem, calc(100vw / 24 * 40 / 60), 2.5rem);
+  --rounded: 1vb;
+  --pilled: 50vb;
 }
-@media (max-width: 1024px) {
+
+@media (min-width: 1024px) {
   :root {
-    --radius: 1rem;
+    --radius: 2rem;
+    --component-padding: 2rem;
   }
 }
