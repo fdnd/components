@@ -1,9 +1,7 @@
 @import 'typography/_index.css';
 @import 'base/_index.css';
 
-
 @import 'atoms/_index.css';
 @import 'molecules/_index.css';
 @import 'organisms/_index.css';
 @import 'templates/_index.css';
-

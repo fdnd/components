@@ -1,0 +1,27 @@
+:has(.documentation) {
+  container-type: inline-size;
+}
+
+.documentation {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'main main'
+    'nav nav';
+  gap: var(--component-gap);
+}
+
+.documentation > :nth-child(1) {
+  grid-area: main;
+}
+
+.documentation > :nth-child(2) {
+  grid-area: nav;
+}
+
+@container (min-width: 40rem) {
+  .documentation {
+    grid-template-areas: 'nav main';
+  }
+}

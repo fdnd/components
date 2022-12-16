@@ -1,20 +1,20 @@
 <script>
-  import NavLink from '$lib/atoms/NavLink.svelte';
+  import '../styles/molecules/_nav.css';
+  import NavLink from '../atoms/NavLink.svelte';
 
-  export let data = {
-    title: 'Please pass a data object containing data.title and data.items, see docs for details.',
-    items: {
-      Example: 'http://example.com',
-      Item: '/item'
-    }
-  };
+  export let data = {};
+  export let type = 'main';
 </script>
 
-<nav>
-  <h2>{data.title}</h2>
-  <ul>
-    {#each Object.entries(data.items) as item}
-      <NavLink {item} />
-    {/each}
-  </ul>
+<nav class={type}>
+  {#each Object.entries(data) as [title, items]}
+    <div>
+      <h2>{title}</h2>
+      <ul>
+        {#each Object.entries(items) as item}
+          <NavLink {item} />
+        {/each}
+      </ul>
+    </div>
+  {/each}
 </nav>

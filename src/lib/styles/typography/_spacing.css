@@ -6,6 +6,10 @@
   margin-top: 1.25rem;
 }
 
+.small-body + .xsmall-body {
+  margin-top: 1.25rem;
+}
+
 .small-body + .button {
   margin-top: 1.25rem;
 }
