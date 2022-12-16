@@ -20,6 +20,10 @@ input {
   color: inherit;
 }
 
-body {
+body,
+body > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-gap);
   min-height: 100%;
 }

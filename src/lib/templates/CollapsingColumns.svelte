@@ -3,7 +3,5 @@
 </script>
 
 <div class="collapsing-columns">
-  <div>
-    <slot />
-  </div>
+  <slot />
 </div>

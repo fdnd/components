@@ -1,10 +1,14 @@
 <script>
   import '../styles/templates/_documentation.css';
+  import { Nav } from '../index.js';
+
+  export let data = {};
 </script>
 
-<div class="documentation">
-  <slot />
-</div>
+<main class="documentation">
+  <div>
+    <slot />
+  </div>
 
-<style>
-</style>
+  <Nav {data} type="document" />
+</main>

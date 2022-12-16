@@ -3,7 +3,7 @@
   import NavLink from '../atoms/NavLink.svelte';
 
   export let data = {};
-  export let type = 'nav';
+  export let type = 'main';
 </script>
 
 <nav class={type}>

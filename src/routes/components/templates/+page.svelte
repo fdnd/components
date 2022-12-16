@@ -18,13 +18,14 @@
   are optional.
 </p>
 
-<Documentation>
+<!-- <DocumentationLayout>
   <nav>&lt;nav/&gt;</nav>
   <main>&lt;main/&gt;</main>
-</Documentation>
+</DocumentationLayout>
 
 <h3>CollapsingColumns</h3>
 <p>Is a multi-column collapsing component.</p>
+-->
 
 <CollapsingColumns>
   <div>&lt;div/&gt;</div>

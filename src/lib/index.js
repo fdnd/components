@@ -1,16 +1,18 @@
+// Basic style for every page
 import '$lib/styles/_basics.css';
 
-// Reexport your entry components here
-
 // Molecules
+export { default as Branding } from './molecules/Branding.svelte';
+export { default as Codestring } from './molecules/Codestring.svelte';
+export { default as Header } from './molecules/Header.svelte';
+export { default as Microsites } from './molecules/Microsites.svelte';
+export { default as Nav } from './molecules/Nav.svelte';
 export { default as PageHeader } from './molecules/PageHeader.svelte';
 export { default as TextBlock } from './molecules/TextBlock.svelte';
-export { default as Branding } from './molecules/Branding.svelte';
-export { default as Nav } from './molecules/Nav.svelte';
+
+// Organisms
 export { default as Footer } from './organisms/Footer.svelte';
 
 // Templates
-export { default as Documentation } from './templates/Documentation.svelte';
 export { default as CollapsingColumns } from './templates/CollapsingColumns.svelte';
-
-export { default as DocumentationLayout } from './templates/DocumentationLayout.svelte';
+export { default as Documentation } from './templates/Documentation.svelte';

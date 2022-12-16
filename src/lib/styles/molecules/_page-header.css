@@ -2,7 +2,8 @@
   overflow: hidden;
   max-width: 90rem;
   margin: 2.5rem auto 0;
-  padding: 0 clamp(1rem, calc(100vw / 24 *  80/60), 5rem);
+  /* Parent decides placement */
+  /* padding: 0 clamp(1rem, calc(100vw / 24 *  80/60), 5rem); */
 }
 
 .page-header-inner {
@@ -11,7 +12,7 @@
 
 .page-header-image {
   width: 100%;
-  height: clamp(30rem, calc(100vw / 24 *  610/60), 38.125rem);
+  height: clamp(30rem, calc(100vw / 24 * 610 / 60), 38.125rem);
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -27,11 +28,12 @@
   z-index: 1;
   top: 0;
   right: 0;
-  padding: 0 clamp(1.5rem, calc(100vw / 24 *  40/60), 2.5rem) clamp(1.5rem, calc(100vw / 24 *  40/60), 2.5rem);
+  padding: 0 clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem)
+    clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem);
 }
 
 .page-header-text h1 {
-  width: clamp(18.75rem, calc(100vw / 24 *  500/60), 31.25rem);
+  width: clamp(18.75rem, calc(100vw / 24 * 500 / 60), 31.25rem);
 }
 
 .page-header-meta {
@@ -41,7 +43,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-  padding: clamp(1.5rem, calc(100vw / 24 *  40/60), 2.5rem) clamp(1.5rem, calc(100vw / 24 *  40/60), 2.5rem) 0;
+  padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem)
+    clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem) 0;
   list-style: none;
   max-width: calc(100vw - 8rem);
 }
@@ -50,7 +53,6 @@
   opacity: 0.65;
   margin-top: 0.25rem;
 }
-
 
 @media (max-width: 750px) {
   .page-header-text {

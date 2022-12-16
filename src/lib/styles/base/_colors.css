@@ -6,6 +6,7 @@
   --c-attention: #fffc86;
 }
 
+html,
 body {
   --background: var(--c-blue);
   --highlight: var(--c-green);

@@ -1,21 +1,11 @@
 <script>
-  import { CollapsingColumns } from '$lib/index.js';
+  import '../styles/organisms/_footer.css';
+  import { CollapsingColumns, Microsites, Codestring } from '$lib/index.js';
 </script>
 
 <footer>
   <CollapsingColumns>
-    <div />
-    <div />
-    <div />
-    <div />
-    <!-- Microsites Molecule -->
-    <!-- Codestring Molecule -->
+    <Microsites />
+    <Codestring />
   </CollapsingColumns>
 </footer>
-
-<style>
-  div {
-    width: 100%;
-    height: 5rem;
-  }
-</style>
