@@ -1,5 +1,5 @@
 <script>
-  import { Nav, Branding, Footer } from '$lib/index.js';
+  import { Wrapper, Nav, Branding, Footer } from '$lib/index.js';
 
   let menu = {
     Menu: {
@@ -15,7 +15,9 @@
 </svelte:head>
 
 <Branding>
-  <Nav data={menu} />
-  <slot />
-  <Footer />
+  <Wrapper>
+    <Nav data={menu} />
+    <slot />
+    <Footer />
+  </Wrapper>
 </Branding>

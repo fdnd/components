@@ -1,7 +1,3 @@
-<script>
-  export let color = 'var(--c-blue)';
-</script>
-
 <svg class="fdnd-logo" viewBox="0 0 94 53" xmlns="http://www.w3.org/2000/svg">
   <rect class="logo-background" x=".5" y="3.5" width="89" height="48" rx="7.5" />
   <path

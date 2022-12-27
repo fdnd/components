@@ -15,5 +15,6 @@ export { default as TwoColumnText } from './molecules/TwoColumnText.svelte';
 export { default as Footer } from './organisms/Footer.svelte';
 
 // Templates
+export { default as Wrapper } from './templates/Wrapper.svelte';
 export { default as CollapsingColumns } from './templates/CollapsingColumns.svelte';
 export { default as Documentation } from './templates/Documentation.svelte';

@@ -1,10 +1,10 @@
 :root {
-  --radius: 1rem;
   --component-gap: 1rem;
   --component-padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem)
     clamp(1rem, calc(100vw / 24 * 40 / 60), 2.5rem);
   --rounded: 1vb;
-  --pilled: 50vb;
+  --pilled: 10vb;
+  --border-width: 1px;
 }
 
 @media (min-width: 1024px) {

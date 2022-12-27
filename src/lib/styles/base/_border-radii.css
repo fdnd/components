@@ -68,38 +68,123 @@
   box-shadow: -4px 4px 0 0 var(--highlight);
 }
 
-[class*='text-block-rounding--'] .corner {
+/*
+Four classes to implement clipped corners:
+.corner--top-left
+.corner--top-right
+.corner--bottom-left
+.corner--bottom-right
+*/
+[class*='corner'] {
   position: absolute;
   display: block;
   z-index: 1;
-  top: -1px;
-  right: -1px;
-  width: var(--width);
-  height: var(--height);
+  width: var(--width, 5rem);
+  height: var(--height, 2rem);
   background: var(--background);
-  border-radius: 0 0 0 calc(var(--radius) / 4);
-  border-left: 1px solid var(--highlight);
-  border-bottom: 1px solid var(--highlight);
+  border-style: solid;
+  border-width: 0;
+}
+[class*='corner--top'] {
+  top: calc(var(--border-width) * -1);
+  border-bottom-width: var(--border-width);
+}
+[class*='corner'][class$='left'] {
+  left: calc(var(--border-width) * -1);
+  border-right-width: var(--border-width);
+}
+[class*='corner--bottom'] {
+  bottom: calc(var(--border-width) * -1);
+  border-top-width: var(--border-width);
+}
+[class*='corner'][class$='right'] {
+  right: calc(var(--border-width) * -1);
+  border-left-width: var(--border-width);
+}
+[class*='corner--top-left'],
+[class*='corner--bottom-right'] {
+  border-radius: var(--radius) 0;
+}
+[class*='corner--top-right'],
+[class*='corner--bottom-left'] {
+  border-radius: 0 var(--radius);
 }
 
-[class*='text-block-rounding--'] .corner::before {
+/* Pseudo elements for additional corner-radius' */
+[class*='corner']::before,
+[class*='corner']::after {
+  --radius-offset: calc(var(--radius) * -1 - var(--border-width));
+  --shadow-offset: calc(var(--radius) / 4);
+  --shadow-offset-negative: calc(var(--shadow-offset) * -1);
   content: '';
   position: absolute;
-  top: 1px;
-  left: calc(var(--radius) / -2 - 1px);
-  border-radius: 0 50% 0 0;
-  width: calc(var(--radius) / 2);
-  height: calc(var(--radius) / 2);
-  box-shadow: 1px -1px 0 0 var(--highlight), 4px -4px 0 0 var(--background);
+  width: var(--radius);
+  height: var(--radius);
+  border-style: solid;
+}
+[class*='corner--top-left']::before,
+[class*='corner--top-left']::after,
+[class*='corner--bottom-right']::before,
+[class*='corner--bottom-right']::after {
+  border-radius: var(--radius) 0;
+}
+[class*='corner--top-right']::before,
+[class*='corner--top-right']::after,
+[class*='corner--bottom-left']::before,
+[class*='corner--bottom-left']::after {
+  border-radius: 0 var(--radius);
+}
+[class*='corner--top-left']::before,
+[class*='corner--top-left']::after {
+  border-width: var(--border-width) 0 0 var(--border-width);
+  box-shadow: var(--shadow-offset-negative) var(--shadow-offset-negative) 0 var(--shadow-offset)
+    var(--background);
+}
+[class*='corner--top-right']::before,
+[class*='corner--top-right']::after {
+  border-width: var(--border-width) var(--border-width) 0 0;
+  box-shadow: var(--shadow-offset) var(--shadow-offset-negative) 0 var(--shadow-offset)
+    var(--background);
+}
+[class*='corner--bottom-left']::before,
+[class*='corner--bottom-left']::after {
+  border-width: 0 0 var(--border-width) var(--border-width);
+  box-shadow: var(--shadow-offset-negative) var(--shadow-offset) 0 var(--shadow-offset)
+    var(--background);
+}
+[class*='corner--bottom-right']::before,
+[class*='corner--bottom-right']::after {
+  border-width: 0 var(--border-width) var(--border-width) 0;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-offset) var(--background);
 }
 
-[class*='text-block-rounding--'] .corner::after {
-  content: '';
-  position: absolute;
-  top: var(--height);
-  right: 1px;
-  border-radius: 0 50% 0 0;
-  width: calc(var(--radius) / 2);
-  height: calc(var(--radius) / 2);
-  box-shadow: 1px -1px 0 0 var(--highlight), 4px -4px 0 0 var(--background);
+/* Pseudo-element positioning */
+[class*='corner--top']::before {
+  top: 0;
+}
+[class*='corner--top']::after {
+  bottom: var(--radius-offset);
+}
+[class*='corner--bottom']::before {
+  top: var(--radius-offset);
+}
+[class*='corner--bottom']::after {
+  bottom: 0;
+}
+
+[class*='corner--top-left']::before,
+[class*='corner--bottom-left']::after {
+  right: var(--radius-offset);
+}
+[class*='corner--top-right']::before,
+[class*='corner--bottom-right']::after {
+  left: var(--radius-offset);
+}
+[class*='corner--top-left']::after,
+[class*='corner--bottom-left']::before {
+  left: 0;
+}
+[class*='corner--top-right']::after,
+[class*='corner--bottom-right']::before {
+  right: 0;
 }
