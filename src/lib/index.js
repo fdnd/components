@@ -1,6 +1,13 @@
 // Basic style for every page
 import './styles/_basics.css';
 
+// Atoms
+export { default as Button } from './atoms/Button.svelte';
+export { default as FdndLogo } from './atoms/FdndLogo.svelte';
+export { default as HvaLogo } from './atoms/HvaLogo.svelte';
+export { default as HvaPayoff } from './atoms/HvaPayoff.svelte';
+export { default as Link } from './atoms/Link.svelte';
+
 // Molecules
 export { default as Branding } from './molecules/Branding.svelte';
 export { default as Codestring } from './molecules/Codestring.svelte';

@@ -1,3 +1,9 @@
 footer {
   margin-top: var(--component-padding);
 }
+
+footer h2,
+footer p {
+  margin: 0;
+  max-width: auto;
+}

@@ -1,22 +1,35 @@
 <script>
   import { Documentation } from '$lib/index.js';
+  import CollapsingColumns from '$lib/templates/CollapsingColumns.svelte';
 
   let data = {
     'Getting Started': {
-      Introduction: '/components'
+      Introduction: '/components/introduction'
     },
-    Atoms: {},
+    Atoms: {
+      Button: '/components/atoms/button',
+      FdndLogo: '/components/atoms/fdndlogo',
+      HvaLogo: '/components/atoms/hvalogo',
+      HvaPayoff: '/components/atoms/hvapayoff',
+      Link: '/components/atoms/link'
+    },
     Molecules: {
       Branding: '/components/molecules/branding',
-      PageHeader: '/components/molecules/pageheader',
+      Codestring: '/components/molecules/codestring',
+      Header: '/components/molecules/header',
+      Microsites: '/components/molecules/microsites',
       Nav: '/components/molecules/nav',
-      TextBlock: '/components/molecules/textblock'
+      PageHeader: '/components/molecules/pageheader',
+      TextBlock: '/components/molecules/textblock',
+      TwoColumntext: '/components/molecules/twocolumntext'
     },
     Organisms: {
       Footer: '/components/organisms/footer'
     },
     Templates: {
-      Templates: '/components/templates'
+      CollapsingColumns: '/components/templates/collapsingcolumns',
+      Documentation: '/components/templates/documentation',
+      Wrapper: '/components/templates/wrapper'
     }
   };
 </script>

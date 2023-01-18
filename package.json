@@ -1,6 +1,17 @@
 {
   "name": "@fdnd/components",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "description": "It's a component library",
+  "keywords": [
+    "sveltekit",
+    "component library",
+    "higher education",
+    "fdnd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdnd/components.git"
+  },
   "svelte": "index.js",
   "type": "module",
   "scripts": {
@@ -28,5 +39,7 @@
     "tslib": "^2.3.1",
     "typescript": "^4.7.4",
     "vite": "^3.1.0"
-  }
+  },
+  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
+  "license": "GPL-3.0"
 }

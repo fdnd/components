@@ -101,13 +101,18 @@ Four classes to implement clipped corners:
   right: calc(var(--border-width) * -1);
   border-left-width: var(--border-width);
 }
-[class*='corner--top-left'],
-[class*='corner--bottom-right'] {
-  border-radius: var(--radius) 0;
+
+[class*='corner--top-left'] {
+  border-radius: 0 0 var(--radius) 0;
 }
-[class*='corner--top-right'],
+[class*='corner--top-right'] {
+  border-radius: 0 0 0 var(--radius);
+}
+[class*='corner--bottom-right'] {
+  border-radius: var(--radius) 0 0 0;
+}
 [class*='corner--bottom-left'] {
-  border-radius: 0 var(--radius);
+  border-radius: 0 var(--radius) 0 0;
 }
 
 /* Pseudo elements for additional corner-radius' */
@@ -122,6 +127,7 @@ Four classes to implement clipped corners:
   height: var(--radius);
   border-style: solid;
 }
+
 [class*='corner--top-left']::before,
 [class*='corner--top-left']::after,
 [class*='corner--bottom-right']::before,

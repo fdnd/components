@@ -1,5 +1,5 @@
 :root {
-  --component-gap: 1rem;
+  --component-gap: 2rem;
   --component-padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem)
     clamp(1rem, calc(100vw / 24 * 40 / 60), 2.5rem);
   --rounded: 1vb;

@@ -1,20 +1,20 @@
 <script>
   import '../styles/molecules/_nav.css';
-  import NavLink from '../atoms/NavLink.svelte';
+  import Link from '../atoms/Link.svelte';
 
   export let data = {};
   export let type = 'main';
 </script>
 
 <nav class={type}>
-  {#each Object.entries(data) as [title, items]}
-    <div>
+  <div>
+    {#each Object.entries(data) as [title, items]}
       <h2>{title}</h2>
       <ul>
         {#each Object.entries(items) as item}
-          <NavLink {item} />
+          <li><Link {item} /></li>
         {/each}
       </ul>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </nav>

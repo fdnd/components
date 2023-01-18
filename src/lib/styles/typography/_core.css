@@ -1,0 +1,13 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 30rem;
+}
