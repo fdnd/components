@@ -3,6 +3,8 @@
 }
 
 .documentation {
+  --background: var(--c-light);
+  --color: var(--c-blue);
   display: grid;
   grid-template-columns: 12rem 1fr;
   grid-template-rows: auto;
@@ -10,6 +12,8 @@
     'main main'
     'nav nav';
   gap: var(--component-gap);
+  /* background: var(--background); */
+  /* color: var(--color); */
 }
 
 .documentation > :nth-child(1) {

@@ -11,6 +11,7 @@ export { default as Link } from './atoms/Link.svelte';
 // Molecules
 export { default as Branding } from './molecules/Branding.svelte';
 export { default as Codestring } from './molecules/Codestring.svelte';
+export { default as DocNav } from './molecules/DocNav.svelte';
 export { default as Header } from './molecules/Header.svelte';
 export { default as Microsites } from './molecules/Microsites.svelte';
 export { default as Nav } from './molecules/Nav.svelte';

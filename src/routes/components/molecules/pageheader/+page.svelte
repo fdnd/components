@@ -30,4 +30,13 @@
 
 <p>This is the pageheader component.</p>
 
-<PageHeader {...pageHeaderContents} />
+<div>
+  <PageHeader {...pageHeaderContents} />
+</div>
+
+<style>
+  div {
+    --color: var(--c-white);
+    --background: var(--c-blue);
+  }
+</style>

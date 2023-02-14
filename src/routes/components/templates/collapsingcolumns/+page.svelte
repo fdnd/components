@@ -12,22 +12,30 @@
 
 <p>Is a multi-column collapsing component.</p>
 
-<CollapsingColumns>
-  <div>&lt;div/&gt;</div>
-  <div>&lt;div/&gt;</div>
-  <div>&lt;div/&gt;</div>
-  <div>&lt;div/&gt;</div>
-  <div>&lt;div/&gt;</div>
-  <div>&lt;div/&gt;</div>
-</CollapsingColumns>
+<div class="colcolcontainer">
+  <CollapsingColumns>
+    <div>&lt;div/&gt;</div>
+    <div>&lt;div/&gt;</div>
+    <div>&lt;div/&gt;</div>
+    <div>&lt;div/&gt;</div>
+    <div>&lt;div/&gt;</div>
+    <div>&lt;div/&gt;</div>
+  </CollapsingColumns>
+</div>
 
 <style>
-  nav,
-  main {
-    padding: var(--component-padding);
-    width: 100%;
-    height: 20rem;
-    background-color: var(--c-green);
-    color: var(--c-blue);
+  .colcolcontainer {
+    --background: var(--c-green);
+    background: var(--background);
+
+    --color: var(--c-blue);
+    color: var(--color);
+  }
+  .colcolcontainer div {
+    --background: var(--c-purple);
+    background: var(--background);
+
+    --color: var(--c-blue);
+    color: var(--color);
   }
 </style>

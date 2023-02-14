@@ -1,6 +1,6 @@
 {
   "name": "@fdnd/components",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "It's a component library",
   "keywords": [
     "sveltekit",
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fdnd/components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fdnd/components/issues"
   },
   "svelte": "index.js",
   "type": "module",

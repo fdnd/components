@@ -16,6 +16,7 @@
     Molecules: {
       Branding: '/components/molecules/branding',
       Codestring: '/components/molecules/codestring',
+      DocNav: '/components/molecules/docnav',
       Header: '/components/molecules/header',
       Microsites: '/components/molecules/microsites',
       Nav: '/components/molecules/nav',
