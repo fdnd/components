@@ -24,6 +24,11 @@ nav.document div {
 nav.document h2 {
   margin-top: 1rem;
 }
+
+nav.document .externallink {
+  margin-top: 1rem;
+}
+
 @container (min-width: 16.4rem) {
   nav.document div {
     column-count: 2;
