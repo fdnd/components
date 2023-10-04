@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <svg class="hva-payoff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.6 16.82">
   <path
     class="branding-color"
