@@ -1,3 +1,6 @@
+// Basic style for every page
+import './style.css'
+
 // Atoms
 // export { default as Button } from './atoms/Button.svelte'
 export { default as FdndLogo } from './atoms/FdndLogo.svelte'
@@ -7,7 +10,7 @@ export { default as HvaPayoff } from './atoms/HvaPayoff.svelte'
 // Molecules
 export { default as Branding } from './molecules/Branding.svelte'
 export { default as Codestring } from './molecules/Codestring.svelte'
-// export { default as Header } from './molecules/Header.svelte'
+export { default as Header } from './molecules/Header.svelte'
 export { default as Microsites } from './molecules/Microsites.svelte'
 export { default as Nav } from './molecules/Nav.svelte'
 // export { default as PageHeader } from './molecules/PageHeader.svelte'

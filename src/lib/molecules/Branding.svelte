@@ -1,7 +1,5 @@
 <script>
-  import HvaLogo from '../atoms/HvaLogo.svelte';
-  import HvaPayoff from '../atoms/HvaPayoff.svelte';
-  import FdndLogo from '../atoms/FdndLogo.svelte';
+  import {HvaLogo, HvaPayoff, FdndLogo} from '../index.js'
 </script>
 
 <div>

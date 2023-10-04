@@ -1,5 +1,5 @@
 <script>
-  import { Branding, Wrapper, Nav, Footer } from '$lib/index.js';
+  import { Branding, Header, Wrapper, Nav, Footer } from '$lib/index.js';
 
   let menu = {
     Menu: {
@@ -16,6 +16,7 @@
 
 <Branding>
   <Wrapper>
+    <Header title="Component Library" punchline="Where our components live happily" />
     <Nav data={menu} />
     <slot />
     <Footer />

@@ -1,5 +1,5 @@
 <script>
-  import { CollapsingColumns, Microsites, Codestring } from '$lib/index.js';
+  import { CollapsingColumns, Microsites, Codestring } from '../index.js';
 </script>
 
 <footer>
