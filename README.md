@@ -67,9 +67,9 @@ Now when you update anything in the local package, run `npm run package` and you
 
 Publishing a new version should be done with care, first test if everything works and run automated test using `npm run test`, if there are breaking changes please add directions on how to update websites using the old version.
 
-Bump the version of the package using `npm version patch -m "Upgrade to %s; descriptive message plx"` in the `/package` folder! Without a version bump, it's not possible to publish the new version of the package. This is a restriction forced by NPM.
+Bump the version of the package using `npm version patch -m "Upgrade to %s; descriptive message plx"`. Without a version bump, it's not possible to publish the new version of the package. This is a restriction forced by NPM.
 
-Run `npm publish` in the `/package` folder, you might be asked to login to the NPM registry, just follow the instructions. If you're not added as a user to the @FDND organisation on NPM (this is not the same as the FDND organisation on Github), you are not able to publish this package. Ask @ju5tu5 for access :)
+Run `npm publish`, you might be asked to login to the NPM registry, just follow the instructions. If you're not added as a user to the @FDND organisation on NPM (this is not the same as the FDND organisation on Github), you are not able to publish this package. Ask @ju5tu5 for access :)
 
 ## License
 

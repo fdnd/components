@@ -1,8 +1,8 @@
 <script>
-  import '../styles/molecules/_microsites.css';
+  // $$restProps.class makes it possible to always inject a class should we want to
 </script>
 
-<section class="microsites">
+<section class="{$$restProps.class || ''}">
   <div class="corner--top-right" />
   <h2>Microsites</h2>
   <p>
@@ -23,3 +23,29 @@
     <li><a href="https://weloveweb.fdnd.nl">We♥web</a></li>
   </ul>
 </section>
+
+<style>
+  section {
+    position: relative;
+    --radius: var(--rounded);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--component-padding);
+    margin: 0 auto;
+    padding: var(--component-padding);
+    color: var(--color);
+    background-color: var(--background);
+    border: 1px solid currentColor;
+    border-radius: var(--radius, var(--rounded));
+  }
+ul {
+  padding: 0;
+}
+ul li {
+  display: inline;
+}
+a {
+  color: var(--color);
+  white-space: nowrap;
+}
+</style>
