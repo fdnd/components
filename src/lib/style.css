@@ -16,8 +16,8 @@ Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b
 
 html,
 body {
-  --background: var(--color-white);
-  --color: var(--color-blue);
+  --background: var(--color-blue);
+  --color: var(--color-white);
   --highlight: var(--color-highlight);
 
   background-color: var(--background);
