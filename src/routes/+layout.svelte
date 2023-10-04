@@ -1,5 +1,5 @@
 <script>
-  import { Wrapper, Nav, Branding, Footer } from '$lib/index.js';
+  import { Branding, Wrapper, Nav, Footer } from '$lib/index.js';
 
   let menu = {
     Menu: {
