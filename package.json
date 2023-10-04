@@ -1,6 +1,6 @@
 {
   "name": "@fdnd/components",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "It's a component library",
   "keywords": [
     "sveltekit",
