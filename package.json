@@ -52,6 +52,7 @@
   "type": "module",
   "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
   "contributors": [
+    "C. Stumpel <c.stumpel@hva.nl>",
     "J. Faber <j.faber@hva.nl>"
   ],
   "license": "GPL-3.0"
