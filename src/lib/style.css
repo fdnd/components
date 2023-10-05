@@ -1,4 +1,4 @@
- /* This globally loaded css sets: colors, sizes, reset, corners and links */
+/* This globally loaded css sets: colors, sizes, reset, corners and links */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
@@ -9,7 +9,8 @@ Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b
 :root {
   --color-blue: #050542;
   --color-green: #66e5bf;
-  --color-purple: #fc73c5;
+  --color-purple: #a675f5;
+  --color-pink: #fc73c5;
   --color-white: #fff;
   --color-highlight: #fffc86;
 }
@@ -49,6 +50,16 @@ body {
   --color: var(--color-purple);
   --highlight: var(--color-highlight);
 }
+.blue-on-pink {
+  --background: var(--color-pink);
+  --color: var(--color-blue);
+  --highlight: var(--color-highlight);
+}
+.pink-on-blue {
+  --background: var(--color-blue);
+  --color: var(--color-pink);
+  --highlight: var(--color-highlight);
+}
 .blue-on-white {
   --background: var(--color-white);
   --color: var(--color-blue);
@@ -83,7 +94,7 @@ o.`Y8b 88  dP   88""   o.`Y8b
 .rounded,
 .pilled {
   border: 1px solid var(--color);
-  border-radius: var(--rounded); 
+  border-radius: var(--rounded);
 }
 .pilled {
   border-radius: var(--pilled);
