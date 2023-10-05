@@ -5,7 +5,7 @@
 </script>
 
 <svelte:element
-  this{tag}
+  this={tag}
   class="{$$restProps.class || ''}"
   style="container-type: inline-size; padding: var(--component-padding);"
 >
