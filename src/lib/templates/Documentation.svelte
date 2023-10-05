@@ -1,45 +1,41 @@
 <script>
-  import { Nav } from '../index.js';
+  import { Subnav } from '../index.js';
   export let data = {};
 </script>
 
-<main class="documentation">
+<main>
   <div>
     <slot />
   </div>
 
-  <Nav {data} type="document" />
+  <Subnav {data} />
 </main>
 
 <style>
-  :has(.documentation) {
+  :global(:has(main)) {
     container-type: inline-size;
   }
 
-  .documentation {
-    --background: var(--c-light);
-    --color: var(--c-blue);
+  main {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 10rem 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       'main main'
       'nav nav';
     gap: var(--component-gap);
-    /* background: var(--background); */
-    /* color: var(--color); */
   }
 
-  .documentation > :nth-child(1) {
+  main > :nth-child(1) {
     grid-area: main;
   }
 
-  .documentation > :nth-child(2) {
+  main > :nth-child(2) {
     grid-area: nav;
   }
 
-  @container (min-width: 40rem) {
-    .documentation {
+  @container (min-width: 30rem) {
+    main {
       grid-template-areas: 'nav main';
     }
   }
