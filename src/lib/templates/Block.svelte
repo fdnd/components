@@ -1,14 +1,13 @@
 <script>
+  
+  export let tag = 'div'
   // $$restProps.class makes it possible to always inject a class should we want to
 </script>
 
-<div class="{$$restProps.class || ''}">
+<svelte:element
+  this{tag}
+  class="{$$restProps.class || ''}"
+  style="container-type: inline-size; padding: var(--component-padding);"
+>
   <slot />
-</div>
-
-<style>
-  div {
-    container-type: inline-size;
-    padding: var(--component-padding);
-  }
-</style>
+</svelte:element>
