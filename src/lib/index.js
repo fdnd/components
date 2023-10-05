@@ -22,6 +22,7 @@ export { default as Subnav } from './molecules/Subnav.svelte'
 export { default as Footer } from './organisms/Footer.svelte'
 
 // Templates
+export { default as Block } from './templates/Block.svelte'
 export { default as CollapsingColumns } from './templates/CollapsingColumns.svelte'
 export { default as Documentation } from './templates/Documentation.svelte'
 export { default as Wrapper } from './templates/Wrapper.svelte'
