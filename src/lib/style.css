@@ -1,4 +1,4 @@
-/* This globally loaded css sets: colors, sizes, reset, corners and links */
+ /* This globally loaded css sets: colors, sizes, reset, corners and links */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
@@ -25,7 +25,6 @@ body {
 }
 
 /* Six main color classes, themes are for backwards compatibility */
-.theme-green,
 .blue-on-green {
   --background: var(--color-green);
   --color: var(--color-blue);
@@ -36,7 +35,6 @@ body {
   --color: var(--color-green);
   --highlight: var(--color-highlight);
 }
-.theme-purple,
 .blue-on-purple {
   --background: var(--color-purple);
   --color: var(--color-blue);
@@ -47,13 +45,11 @@ body {
   --color: var(--color-purple);
   --highlight: var(--color-highlight);
 }
-.theme-white,
 .blue-on-white {
   --background: var(--color-white);
   --color: var(--color-blue);
   --highlight: var(--color-highlight);
 }
-.theme-blue,
 .white-on-blue {
   --background: var(--color-blue);
   --color: var(--color-white);
