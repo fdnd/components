@@ -6,6 +6,9 @@
 </div>
 
 <style>
+  :global(:has(.collapsing-columns)) {
+    container-type: inline-size;
+  }
   .collapsing-columns {
     display: grid;
     grid-template-columns: 1fr;
