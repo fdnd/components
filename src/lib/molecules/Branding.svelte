@@ -4,7 +4,6 @@
 
 <div>
   <HvaLogo />
-  <FdndLogo />
 </div>
 
 <slot />
@@ -27,11 +26,4 @@
   div.payoff {
     height: 3rem;
   }
-
-  /* Hide the FDND logo on screens smaller than 14rem */
-  /* @container branding (max-width: 14rem) {
-    .branding .fdnd-logo {
-      display: none;
-    }
-  } */
 </style>
