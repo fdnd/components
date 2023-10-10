@@ -1,5 +1,5 @@
 // Basic style for every page
-import './style.css'
+import './styles/style.css'
 
 // Atoms
 // export { default as Button } from './atoms/Button.svelte'

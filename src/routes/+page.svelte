@@ -1,8 +1,11 @@
 <script>
+  import {Block} from "$lib/index.js"
+
 </script>
 
 <!-- Should have the readme.md contents, can we hook it together? -->
 
+<Block tag="section" class="blue-on-green rounded corner--top-right">
 <h2>Hi 👋</h2>
 
 <p>
@@ -19,3 +22,4 @@
   It's a component library for FDND students and teachers. It implements the FDND styleguide and is
   actively maintained as it's components are used throughout our microsite environment.
 </p>
+</Block>

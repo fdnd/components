@@ -1,0 +1,28 @@
+/*P"Y8 88 8888P 888888 .dP"Y8 
+`Ybo." 88   dP  88__   `Ybo." 
+o.`Y8b 88  dP   88""   o.`Y8b 
+8bodP' 88 d8888 888888 8bod*/
+:root {
+  --radius: 1rem;
+  --component-gap: 2rem;
+  --component-padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem) clamp(1rem, calc(100vw / 24 * 40 / 60), 2.5rem);
+  --rounded: 1vb;
+  --pilled: 10vb;
+  --border-width: 1px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --radius: 2rem;
+    --component-padding: 2rem;
+  }
+}
+
+.rounded,
+.pilled {
+  border: 1px solid var(--color);
+  border-radius: var(--rounded);
+}
+.pilled {
+  border-radius: var(--pilled);
+}

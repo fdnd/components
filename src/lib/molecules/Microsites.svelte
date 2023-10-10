@@ -3,7 +3,6 @@
 </script>
 
 <section class="{$$restProps.class || ''}">
-  <div class="corner--top-right" />
   <h2>Microsites</h2>
   <p>
     FDND maakt gebruik van een heleboel microsites in plaats van één grote website met een
@@ -13,14 +12,13 @@
 
   <ul>
     <li><a href="https://fdnd.nl">fdnd.nl</a></li>
-    <li><a href="https://agency.fdnd.nl">Agency</a></li>
-    <li><a href="https://contact.fdnd.nl">Contact en routebeschrijving</a></li>
-    <li><a href="https://docs.fdnd.nl">Documenten</a></li>
-    <li><a href="https://partners.fdnd.nl">Partners</a></li>
-    <li><a href="https://programma.fdnd.nl">Programma</a></li>
-    <li><a href="https://quotes.fdnd.nl">Quotes</a></li>
-    <li><a href="https://styleguide.fdnd.nl">Styleguide</a></li>
-    <li><a href="https://weloveweb.fdnd.nl">We♥web</a></li>
+    <li><a href="https://contact.fdnd.nl">contact en routebeschrijving</a></li>
+    <li><a href="https://docs.fdnd.nl">documenten</a></li>
+    <li><a href="https://partners.fdnd.nl">partners</a></li>
+    <li><a href="https://programma.fdnd.nl">programma</a></li>
+    <li><a href="https://quotes.fdnd.nl">quotes</a></li>
+    <li><a href="https://styleguide.fdnd.nl">styleguide</a></li>
+    <li><a href="https://weloveweb.fdnd.nl">we♥web</a></li>
   </ul>
 </section>
 

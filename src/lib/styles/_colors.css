@@ -1,0 +1,69 @@
+/*P""b8  dP"Yb  88      dP"Yb  88""Yb .dP"Y8 
+dP   `" dP   Yb 88     dP   Yb 88__dP `Ybo." 
+Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b 
+ YboodP  YbodP  88ood8  YbodP  88  Yb 8bod*/
+:root {
+  --color-blue: #050542;
+  --color-green: #66e5bf;
+  --color-purple: #a675f5;
+  --color-pink: #f0b7f9;
+  --color-white: #fff;
+  --color-highlight: #fffc86;
+}
+
+html,
+body {
+  --background: var(--color-blue);
+  --color: var(--color-white);
+  --highlight: var(--color-highlight);
+  --body-background: var(--background);
+
+  background-color: var(--background);
+  color: var(--color);
+}
+
+/* Six main color classes */
+[class*='-on-'] {
+  background-color: var(--background);
+  color: var(--color);
+}
+.blue-on-green {
+  --background: var(--color-green);
+  --color: var(--color-blue);
+  --highlight: var(--color-highlight);
+}
+.green-on-blue {
+  --background: var(--color-blue);
+  --color: var(--color-green);
+  --highlight: var(--color-highlight);
+}
+.blue-on-purple {
+  --background: var(--color-purple);
+  --color: var(--color-blue);
+  --highlight: var(--color-highlight);
+}
+.purple-on-blue {
+  --background: var(--color-blue);
+  --color: var(--color-purple);
+  --highlight: var(--color-highlight);
+}
+.blue-on-pink {
+  --background: var(--color-pink);
+  --color: var(--color-blue);
+  --highlight: var(--color-highlight);
+}
+.pink-on-blue {
+  --background: var(--color-blue);
+  --color: var(--color-pink);
+  --highlight: var(--color-highlight);
+}
+.blue-on-white {
+  --background: var(--color-white);
+  --color: var(--color-blue);
+  --highlight: var(--color-highlight);
+}
+.white-on-blue {
+  --background: var(--color-blue);
+  --color: var(--color-white);
+  --highlight: var(--color-highlight);
+}

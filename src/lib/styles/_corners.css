@@ -1,0 +1,44 @@
+/*P""b8  dP"Yb  88""Yb 88b 88 888888 88""Yb .dP"Y8 
+dP   `" dP   Yb 88__dP 88Yb88 88__   88__dP `Ybo." 
+Yb      Yb   dP 88"Yb  88 Y88 88""   88"Yb  o.`Y8b 
+ YboodP  YbodP  88  Yb 88  Y8 888888 88  Yb 8bodP'
+
+Four classes to implement clipped corners:
+.corner--top-left .corner--top-right
+.corner--bottom-left .corner--bottom-right
+*/
+[class*='corner']:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  background: var(--body-background);
+}
+[class*='corner--top']:before {
+  top: 0;
+  margin-top: -1px;
+}
+[class*='corner--bottom']:before {
+  bottom: 0;
+  margin-bottom: -1px;
+}
+.corner--top-right:before {
+  right: 0;
+  margin-right: -1px;
+  clip-path: path('M0 0s8 0 8 8v8s0 8 8 8h76s8 0 8 8V0H0z');
+}
+.corner--top-left:before {
+  left: 0;
+  margin-left: -1px;
+  clip-path: path('M100 0s-8 0-8 8v8s0 8-8 8H8s-8 0-8 8V0h100z');
+}
+.corner--bottom-right:before {
+  right: 0;
+  margin-right: -1px;
+  clip-path: path('M0 32s8 0 8-8v-8s0-8 8-8h76s8 0 8-8v32H0z');
+}
+.corner--bottom-left:before {
+  left: 0;
+  margin-left: -1px;
+  clip-path: path('M100 32s-8 0-8-8v-8s0-8-8-8H8s-8 0-8-8v62h100z');
+}

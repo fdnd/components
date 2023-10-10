@@ -1,0 +1,8 @@
+/* This globally loaded css sets: colors, sizes, reset, corners and links */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@import '_reset.css';
+@import '_colors.css';
+@import '_sizes.css';
+@import '_corners.css';
+@import '_links.css';
