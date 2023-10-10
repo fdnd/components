@@ -1,5 +1,4 @@
 <script>
-  
   export let tag = 'div'
   // $$restProps.class makes it possible to always inject a class should we want to
 </script>

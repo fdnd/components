@@ -1,0 +1,153 @@
+/* Outset titles on the right */
+.title-outset-right {
+  & h2 {
+    margin: calc(-1px - var(--component-padding)) calc(-1px - var(--component-padding)) 0.5rem 0.5rem;
+    position: relative;
+    width: fit-content;
+    max-width: 80%;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: var(--color);
+    background-color: var(--body-background);
+    color: var(--body-color);
+
+    z-index: 2;
+    float: right;
+    shape-outside: margin-box;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-color: var(--color);
+    }
+  }
+
+  /* Pilled variant */
+  &.pilled,
+  & .pilled {
+    & h2 {
+      --pad: calc(var(--pilled) / 4);
+      padding: var(--pad) 0 calc(var(--pad) * 3) calc(var(--pad) * 2);
+      border-bottom-left-radius: var(--pilled);
+      &:before,
+      &:after {
+        width: var(--pilled);
+        height: var(--pilled);
+        border-top-right-radius: var(--pilled);
+        box-shadow: 0.27rem calc(-0.25 * var(--pilled)) 0 0.27rem var(--body-background);
+      }
+      &:before {
+        top: 0;
+        left: calc(-1 * var(--pilled));
+      }
+      &:after {
+        right: 0;
+        bottom: calc(-1 * var(--pilled));
+      }
+    }
+  }
+
+  /* Rounded variant */
+  &.rounded,
+  & .rounded {
+    & h2 {
+      --pad: calc(var(--rounded) / 2);
+      padding: var(--pad) 0 calc(var(--pad) * 3) calc(var(--pad) * 2);
+      border-bottom-left-radius: var(--rounded);
+      &:before,
+      &:after {
+        width: calc(1.5 * var(--rounded));
+        height: calc(2 * var(--rounded));
+        border-top-right-radius: var(--rounded);
+        box-shadow: 0.2rem calc(-0.5 * var(--rounded)) 0 0 var(--body-background);
+      }
+      &:before {
+        top: 0;
+        left: calc(-1.5 * var(--rounded));
+      }
+      &:after {
+        right: 0;
+        bottom: calc(-2 * var(--rounded));
+      }
+    }
+  }
+}
+
+/* Outset titles on the left */
+.title-outset-left {
+  & h2 {
+    margin: calc(-1px - var(--component-padding)) 0.5rem 0.5rem calc(-1px - var(--component-padding));
+    position: relative;
+    width: fit-content;
+    max-width: 80%;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: var(--color);
+    background-color: var(--body-background);
+    color: var(--body-color);
+    float: left;
+    shape-outside: margin-box;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      border-width: 1px 0 0 1px;
+      border-style: solid;
+      border-color: var(--color);
+    }
+  }
+
+  /* Pilled variant */
+  &.pilled,
+  & .pilled {
+    & h2 {
+      --pad: calc(var(--pilled) / 4);
+      padding: var(--pad) calc(var(--pad) * 2) calc(var(--pad) * 3) 0;
+      border-bottom-right-radius: var(--pilled);
+      &:before,
+      &:after {
+        width: var(--pilled);
+        height: var(--pilled);
+        border-top-left-radius: var(--pilled);
+        box-shadow: -0.27rem calc(-0.25 * var(--pilled)) 0 0.27rem var(--body-background);
+      }
+      &:before {
+        left: 0;
+        bottom: calc(-1 * var(--pilled));
+      }
+      &:after {
+        top: 0;
+        right: calc(-1 * var(--pilled));
+      }
+    }
+  }
+
+  /* Rounded variant */
+  &.rounded,
+  & .rounded {
+    & h2 {
+      --pad: calc(var(--rounded) / 2);
+      padding: var(--pad) calc(var(--pad) * 2) calc(var(--pad) * 3) 0;
+      border-bottom-right-radius: var(--rounded);
+      &:before,
+      &:after {
+        width: calc(1.5 * var(--rounded));
+        height: calc(2 * var(--rounded));
+        border-top-left-radius: var(--rounded);
+        box-shadow: -0.2rem calc(-0.5 * var(--rounded)) 0 0 var(--body-background);
+      }
+      &:before {
+        left: 0;
+        bottom: calc(-2 * var(--rounded));
+      }
+      &:after {
+        top: 0;
+        right: calc(-1.5 * var(--rounded));
+      }
+    }
+  }
+}

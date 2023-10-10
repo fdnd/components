@@ -11,22 +11,21 @@ Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b
   --color-highlight: #fffc86;
 }
 
+/* Basics color settings (follows .white-on-blue scheme) */
 html,
 body {
   --background: var(--color-blue);
   --color: var(--color-white);
   --highlight: var(--color-highlight);
+
+  /* Don't overwrite these! */
   --body-background: var(--background);
-
-  background-color: var(--background);
-  color: var(--color);
+  --body-color: var(--color);
+  background-color: var(--body-background);
+  color: var(--body-color);
 }
 
-/* Six main color classes */
-[class*='-on-'] {
-  background-color: var(--background);
-  color: var(--color);
-}
+/* Eight color schemes */
 .blue-on-green {
   --background: var(--color-green);
   --color: var(--color-blue);
@@ -66,4 +65,10 @@ body {
   --background: var(--color-blue);
   --color: var(--color-white);
   --highlight: var(--color-highlight);
+}
+
+/* Switch on background-color and color  if a color class is set*/
+[class*='-on-'] {
+  background-color: var(--background);
+  color: var(--color);
 }
