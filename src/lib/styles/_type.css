@@ -57,50 +57,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-main a,
-footer a {
-  white-space: inherit;
-
-  &[href^='http://']:after,
-  &[href^='https://']:after
-  {
-    content: '';
-    margin: 0 0 -0.1em 0.1em;
-    display: inline-block;
-    line-height: 1em;
-    font-size: 0.8em;
-    width: 1em;
-    height: 1em;
-    background: url('/link-external.svg') no-repeat 100% 0;
-    background-size: contain;
-  }
-  &[href$='.pdf']:after,
-  &[href$='.doc']:after {
-    content: '';
-    margin: 0 0 -0.1em 0.1em;
-    display: inline-block;
-    line-height: 1em;
-    font-size: 0.8em;
-    width: 1em;
-    height: 1em;
-    background: url('/file-text.svg') no-repeat 100% 0;
-    background-size: contain;
-  }
-  &[href$='.zip']:after,
-  &[href$='.rar']:after,
-  &[href$='.tar']:after {
-    content: '';
-    margin: 0 0 -0.1em 0.1em;
-    display: inline-block;
-    line-height: 1em;
-    font-size: 0.8em;
-    width: 1em;
-    height: 1em;
-    background: url('/file-zip.svg') no-repeat 100% 0;
-    background-size: contain;
-  }
-}
 article > a,
 section > a {
   display: block;
@@ -132,7 +88,7 @@ blockquote > p + p {
 }
 
 cite {
-  /* font-style: italic; */
+  font-style: italic;
 }
 
 code {
@@ -143,11 +99,10 @@ code {
 del {
   background: var(--highlight);
 }
-
-/* del:before {
+del:before {
   content: '- ';
   text-decoration: none;
-} */
+}
 
 em {
   font-style: italic;
@@ -164,10 +119,9 @@ ins {
   background: var(--highlight);
   text-decoration: none;
 }
-
-/* ins:before {
+ins:before {
   content: '+ ';
-} */
+}
 
 kbd {
   background: silver;
