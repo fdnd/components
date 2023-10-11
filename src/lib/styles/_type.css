@@ -1,0 +1,238 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+header,
+main,
+footer {
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 1rem 0 0.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h5 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h6 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+p + p {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+main a,
+footer a {
+  white-space: inherit;
+
+  &[href^='http://']:after,
+  &[href^='https://']:after
+  {
+    content: '';
+    margin: 0 0 -0.1em 0.1em;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 0.8em;
+    width: 1em;
+    height: 1em;
+    background: url('/link-external.svg') no-repeat 100% 0;
+    background-size: contain;
+  }
+  &[href$='.pdf']:after,
+  &[href$='.doc']:after {
+    content: '';
+    margin: 0 0 -0.1em 0.1em;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 0.8em;
+    width: 1em;
+    height: 1em;
+    background: url('/file-text.svg') no-repeat 100% 0;
+    background-size: contain;
+  }
+  &[href$='.zip']:after,
+  &[href$='.rar']:after,
+  &[href$='.tar']:after {
+    content: '';
+    margin: 0 0 -0.1em 0.1em;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 0.8em;
+    width: 1em;
+    height: 1em;
+    background: url('/file-zip.svg') no-repeat 100% 0;
+    background-size: contain;
+  }
+}
+article > a,
+section > a {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+blockquote {
+  margin: 1rem 0 1rem 1rem;
+  border-left-width: 2px;
+  border-left-style: solid;
+  padding-left: 1rem;
+  font-size: inherit;
+}
+
+blockquote > p {
+  margin: 0;
+}
+blockquote > p + p {
+  text-indent: 2rem;
+}
+
+cite {
+  /* font-style: italic; */
+}
+
+code {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+del {
+  background: var(--highlight);
+}
+
+/* del:before {
+  content: '- ';
+  text-decoration: none;
+} */
+
+em {
+  font-style: italic;
+}
+
+figcaption {
+}
+
+i {
+  font-style: italic;
+}
+
+ins {
+  background: var(--highlight);
+  text-decoration: none;
+}
+
+/* ins:before {
+  content: '+ ';
+} */
+
+kbd {
+  background: silver;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: inherit;
+  border-style: solid;
+}
+
+mark {
+  background-color: var(--highlight);
+}
+
+q {
+  /* font-style: italic; */
+}
+
+strong {
+  font-weight: 600;
+}
+
+sub,
+sup {
+  font-size: 0.7rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.5rem;
+}
+sup {
+  top: -0.5rem;
+}
+
+time {
+  display: inline;
+}
+
+/* Lists and such */
+main {
+  & ul {
+    margin: 0.5rem 0 0 1.2rem;
+
+    & li {
+      list-style: disc;
+      margin-bottom: 0.5rem;
+    }
+  }
+  & ol {
+    margin: 0.5rem 0 0 1.2rem;
+
+    & li {
+      list-style: numeric;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & ul + p,
+  & ol + p,
+  & ul + ol,
+  & ol + ul,
+  & ul + ul,
+  & ol + ol {
+    margin-top: 1rem;
+  }
+}

@@ -5,9 +5,9 @@ o.`Y8b 88  dP   88""   o.`Y8b
 :root {
   --radius: 1rem;
   --component-gap: 2rem;
-  --component-padding: clamp(1.5rem, calc(100vw / 24 * 40 / 60), 2.5rem) clamp(1rem, calc(100vw / 24 * 40 / 60), 2.5rem);
-  --rounded: 1vb;
-  --pilled: 10vb;
+  --component-padding: 1rem;
+  --rounded: 0.5rem;
+  --pilled: 2rem;
   --border-width: 1px;
 }
 

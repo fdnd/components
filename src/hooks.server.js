@@ -7,6 +7,10 @@ const redirects = [
     source: '/styleguide',
     destination: '/styleguide/introduction',
   },
+  {
+    source: '/utility',
+    destination: '/utility/introduction',
+  },
 ]
 
 export async function handle({ event, resolve }) {

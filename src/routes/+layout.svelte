@@ -5,8 +5,9 @@
     Menu: {
       Home: '/',
       Components: '/components',
-      Styleguide: '/styleguide'
-    }
+      Utility: '/utility',
+      Styleguide: '/styleguide',
+    },
   }
 </script>
 

@@ -6,7 +6,9 @@
 </script>
 
 <header>
+  <div>
   <FdndLogo/>
+  </div>
   <h1>
     <abbr title="Frontend Design & Development"><span>FDND</span></abbr>
     <span>{title}</span>
@@ -15,7 +17,7 @@
 </header>
 
 <style>
-    /* width:8rem;
-    fill:var(--color-green) !important;
-    height:auto !important */
+  div {
+    width:5rem;
+  }
 </style>

@@ -4,7 +4,7 @@
 
 <footer>
   <CollapsingColumns>
-    <Microsites />
+    <Microsites class="rounded title-outset-right" />
     <Codestring />
   </CollapsingColumns>
 </footer>

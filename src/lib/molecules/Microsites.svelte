@@ -24,26 +24,16 @@
 
 <style>
   section {
-    position: relative;
-    --radius: var(--rounded);
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--component-padding);
-    margin: 0 auto;
     padding: var(--component-padding);
-    color: var(--color);
-    background-color: var(--background);
-    border: 1px solid currentColor;
-    border-radius: var(--radius, var(--rounded));
   }
-ul {
-  padding: 0;
-}
-ul li {
-  display: inline;
-}
-a {
-  color: var(--color);
-  white-space: nowrap;
-}
+  ul {
+    padding: 0;
+  }
+  ul li {
+    display: inline;
+  }
+  a {
+    color: var(--color);
+    white-space: nowrap;
+  }
 </style>

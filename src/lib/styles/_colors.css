@@ -5,28 +5,28 @@ Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b
 :root {
   --color-blue: #050542;
   --color-green: #66e5bf;
+  --color-green-oklch: oklch(83.97% 0.126 170.74);
   --color-purple: #a675f5;
-  --color-pink: #f0b7f9;
+  --color-purple-oklch: oklch(66.85% 0.186 298.97);
   --color-white: #fff;
   --color-highlight: #fffc86;
 }
 
+/* Basics color settings (follows .white-on-blue scheme) */
 html,
 body {
   --background: var(--color-blue);
   --color: var(--color-white);
   --highlight: var(--color-highlight);
+
+  /* Don't overwrite these! */
   --body-background: var(--background);
-
-  background-color: var(--background);
-  color: var(--color);
+  --body-color: var(--color);
+  background-color: var(--body-background);
+  color: var(--body-color);
 }
 
-/* Six main color classes */
-[class*='-on-'] {
-  background-color: var(--background);
-  color: var(--color);
-}
+/* Six color schemes */
 .blue-on-green {
   --background: var(--color-green);
   --color: var(--color-blue);
@@ -47,16 +47,6 @@ body {
   --color: var(--color-purple);
   --highlight: var(--color-highlight);
 }
-.blue-on-pink {
-  --background: var(--color-pink);
-  --color: var(--color-blue);
-  --highlight: var(--color-highlight);
-}
-.pink-on-blue {
-  --background: var(--color-blue);
-  --color: var(--color-pink);
-  --highlight: var(--color-highlight);
-}
 .blue-on-white {
   --background: var(--color-white);
   --color: var(--color-blue);
@@ -66,4 +56,39 @@ body {
   --background: var(--color-blue);
   --color: var(--color-white);
   --highlight: var(--color-highlight);
+}
+
+/* Gradient fallback */
+.gradient {
+  --angle: 42deg;
+  background-image: linear-gradient(var(--angle), var(--color-purple) 0%, var(--color-green) 100%);
+}
+@media (color-gamut: p3) {
+  .gradient {
+    background-image: linear-gradient(
+      var(--angle) in oklch,
+      oklch(66.85% 0.186 298.97) 0%,
+      oklch(83.97% 0.126 170.74) 100%
+    );
+  }
+}
+
+.gradient-reverse {
+  --angle: 200deg;
+  background-image: linear-gradient(var(--angle), var(--color-purple) 0%, var(--color-green) 100%);
+}
+@media (color-gamut: p3) {
+  .gradient-reverse {
+    background-image: linear-gradient(
+      var(--angle) in oklch,
+      oklch(66.85% 0.186 298.97) 0%,
+      oklch(83.97% 0.126 170.74) 100%
+    );
+  }
+}
+
+/* Switch on background-color and color  if a color class is set*/
+[class*='-on-'] {
+  background-color: var(--background);
+  color: var(--color);
 }
