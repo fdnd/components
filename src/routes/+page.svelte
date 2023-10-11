@@ -1,5 +1,6 @@
 <script>
-  import {Block, CollapsingColumns} from "$lib/index.js"
+  import {Block} from "$lib/index.js"
+
 </script>
 
 <!-- Should have the readme.md contents, can we hook it together? -->
