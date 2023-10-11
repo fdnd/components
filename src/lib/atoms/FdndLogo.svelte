@@ -16,6 +16,7 @@
   svg {
     height: 100%;
     fill: var(--color);
+    width:8rem;
   }
   .logo-background {
     fill: var(--background);
