@@ -5,7 +5,7 @@
 
 <!-- Should have the readme.md contents, can we hook it together? -->
 
-<Block tag="section" class="blue-on-green rounded corner--bottom-right">
+<Block tag="section" class="blue-on-green gradient-reverse rounded title-outset-left">
   <h2>Hi 👋</h2>
 
   <p>
@@ -17,11 +17,21 @@
   </p>
 </Block>
 
-<Block tag="section" class="blue-on-purple rounded corner--top-right">
-  <h3>Description</h3>
+<Block tag="section" class="blue-on-green rounded title-outset-right">
+  <h2>Description</h2>
 
   <p>
     It's a component library for FDND students and teachers. It implements the FDND styleguide and is
     actively maintained as it's components are used throughout our microsite environment.
   </p>
+</Block>
+
+<Block tag="section" class="green-on-blue rounded title-outset-left">
+  <h2>Lorem Ipsum</h2>
+  <p>Nam eaque nobis culpa earum fugit harum, veritatis optio, ad distinctio amet laudantium, molestiae dicta officiis velit nihil! Explicabo labore tenetur aspernatur.</p>
+</Block>
+
+<Block tag="section" class="purple-on-blue rounded title-outset-right">
+  <h2>Repellat possimus</h2>
+  <p>Repellat possimus architecto fugiat iusto amet accusantium nesciunt, sint est itaque aut sunt dolor rerum adipisci molestias consequatur tempore optio deserunt nam!</p>
 </Block>
