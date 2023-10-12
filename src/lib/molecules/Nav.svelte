@@ -119,6 +119,7 @@
     border-color: var(--background);
   }
 
+  
   @container nav (min-width: 20rem) {
     li:nth-of-type(1) a {
       transform: rotate(-5deg);
