@@ -1,10 +1,10 @@
 <script>
-  import {Block} from "$lib/index.js"
+  import {Block, CollapsingColumns} from "$lib/index.js"
 
 </script>
 
 <!-- Should have the readme.md contents, can we hook it together? -->
-
+<CollapsingColumns>
 <Block tag="section" class="blue-on-green gradient-reverse rounded title-outset-left">
   <h2>Hi 👋</h2>
 
@@ -35,3 +35,4 @@
   <h2>Repellat possimus</h2>
   <p>Repellat possimus architecto fugiat iusto amet accusantium nesciunt, sint est itaque aut sunt dolor rerum adipisci molestias consequatur tempore optio deserunt nam!</p>
 </Block>
+</CollapsingColumns>

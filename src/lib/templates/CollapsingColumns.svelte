@@ -28,4 +28,22 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
+
+  @supports not selector(:has(* +)) {
+    @media (min-width: 40rem) {
+      .collapsing-columns {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 80rem) {
+      .collapsing-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    @media (min-width: 120rem) {
+      .collapsing-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
 </style>
