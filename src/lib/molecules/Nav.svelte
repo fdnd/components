@@ -119,7 +119,8 @@
     border-color: var(--background);
   }
 
-  @container nav (min-width: 20rem) {
+  
+  /* @container nav (min-width: 20rem) {
     li:nth-of-type(1) a {
       transform: rotate(-5deg);
     }
@@ -153,5 +154,5 @@
     li:nth-of-type(11) a {
       transform: rotate(3deg);
     }
-  }
+  } */
 </style>

@@ -3,9 +3,12 @@ import './styles/style.css'
 
 // Atoms
 // export { default as Button } from './atoms/Button.svelte'
+export { default as Bar } from './atoms/Bar.svelte'
 export { default as FdndLogo } from './atoms/FdndLogo.svelte'
 export { default as HvaLogo } from './atoms/HvaLogo.svelte'
 export { default as HvaPayoff } from './atoms/HvaPayoff.svelte'
+export { default as Slider } from './atoms/Slider.svelte'
+export { default as Square } from './atoms/Square.svelte'
 
 // Molecules
 export { default as Branding } from './molecules/Branding.svelte'

@@ -79,7 +79,7 @@
 /* Outset titles on the left */
 .title-outset-left {
   & h2 {
-    margin: calc(-1px - var(--component-padding)) 0.5rem 0.5rem calc(-1px - var(--component-padding));
+    margin: calc(-1px - var(--component-padding)) 2rem 0.5rem calc(-1px - var(--component-padding));
     position: relative;
     width: fit-content;
     max-width: 80%;
