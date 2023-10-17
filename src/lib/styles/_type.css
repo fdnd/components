@@ -10,40 +10,41 @@ footer {
 }
 
 h1 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
   font-weight: 600;
 }
 
 h2 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 200;
+  padding: 0 1rem;
 }
 
 h3 {
-  margin: 1rem 0 0.2rem 0;
+  margin: 1rem 0;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-h4 {
+h4, h5, h6 {
   margin: 0.5rem 0 0.2rem 0;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-h5 {
-  margin: 0.5rem 0 0.2rem 0;
+h5, h6 {
   font-size: 1.2rem;
-  font-weight: 600;
 }
 
 h6 {
-  margin: 0.5rem 0 0.2rem 0;
-  font-size: 1.2rem;
   font-weight: normal;
   font-style: italic;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 p + p {
@@ -51,7 +52,7 @@ p + p {
 }
 
 a {
-  color: inherit;
+  color: currentColor;
   text-decoration: underline;
 }
 a:hover {
@@ -165,7 +166,8 @@ time {
 /* Lists and such */
 main {
   & ul {
-    margin: 0.5rem 0 0 1.2rem;
+    margin: 0.5rem 0 0;
+    padding:0;
 
     & li {
       list-style: disc;
@@ -180,13 +182,14 @@ main {
       margin-bottom: 0.5rem;
     }
   }
-
   & ul + p,
   & ol + p,
-  & ul + ol,
+  & ul + ol {
+    margin-top: 1rem;
+  }
   & ol + ul,
   & ul + ul,
   & ol + ol {
-    margin-top: 1rem;
+    margin: 1rem 0 0 1rem
   }
 }

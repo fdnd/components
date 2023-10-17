@@ -10,12 +10,12 @@ o.`Y8b 88  dP   88""   o.`Y8b
   --pilled: 2rem;
   --border-width: 1px;
   --codestring-height: 3.4rem;
+  scroll-behavior: smooth;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   :root {
     --radius: 2rem;
-    --component-padding: 2rem;
   }
 }
 

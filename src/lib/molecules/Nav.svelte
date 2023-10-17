@@ -56,6 +56,7 @@
   }
   /* Ugly importance.. we need to overrule more specific styling rules set below... */
   a.active {
+    --highlight: var(--color-green);
     background: var(--highlight) !important;
     color: var(--color-blue) !important;
     border-color: var(--highlight) !important;
