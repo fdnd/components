@@ -32,12 +32,13 @@
   }
 
   nav h2 {
-    margin: 0;
+    margin: 0; padding: 0;
     font-size: 1rem;
   }
 
   nav a {
     color: var(--color);
+    font-size: 1rem;
   }
   nav a.active {
     color: var(--color-blue);

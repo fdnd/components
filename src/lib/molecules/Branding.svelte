@@ -20,10 +20,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
-    justify-content: space-between;
+    justify-content: end;
     z-index: 0;
   }
   div.payoff {
+    margin-top: 1rem;
     height: 3rem;
   }
 </style>

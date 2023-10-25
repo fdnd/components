@@ -2,8 +2,9 @@
   import { Documentation } from '$lib/index.js'
 
   let data = {
-    'Getting Started': {
-      Introduction: '/styleguide/introduction'
+    'Inhoud': {
+      Introductie: '/styleguide/introduction',
+      Vormentaal: '/styleguide/vormen'
     },
   }
 </script>

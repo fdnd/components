@@ -119,41 +119,4 @@
     background-color: var(--color);
     border-color: var(--background);
   }
-
-  
-  /* @container nav (min-width: 20rem) {
-    li:nth-of-type(1) a {
-      transform: rotate(-5deg);
-    }
-    li:nth-of-type(2) a {
-      transform: rotate(5deg);
-    }
-    li:nth-of-type(3) a {
-      transform: rotate(3deg);
-    }
-    li:nth-of-type(4) a {
-      transform: rotate(-2deg);
-    }
-    li:nth-of-type(5) a {
-      transform: rotate(4deg);
-    }
-    li:nth-of-type(6) a {
-      transform: rotate(1deg);
-    }
-    li:nth-of-type(7) a {
-      transform: rotate(-2deg);
-    }
-    li:nth-of-type(8) a {
-      transform: rotate(3deg);
-    }
-    li:nth-of-type(9) a {
-      transform: rotate(-5deg);
-    }
-    li:nth-of-type(10) a {
-      transform: rotate(5deg);
-    }
-    li:nth-of-type(11) a {
-      transform: rotate(3deg);
-    }
-  } */
 </style>

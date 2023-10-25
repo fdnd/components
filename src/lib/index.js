@@ -7,6 +7,7 @@ export { default as Bar } from './atoms/Bar.svelte'
 export { default as FdndLogo } from './atoms/FdndLogo.svelte'
 export { default as HvaLogo } from './atoms/HvaLogo.svelte'
 export { default as HvaPayoff } from './atoms/HvaPayoff.svelte'
+export { default as Icon } from './atoms/Icon.svelte'
 export { default as Slider } from './atoms/Slider.svelte'
 export { default as Square } from './atoms/Square.svelte'
 
