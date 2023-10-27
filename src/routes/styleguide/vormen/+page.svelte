@@ -4,10 +4,10 @@
 
 <h2 class="purple-on-blue">Vormen</h2>
 
-<p class="green-on-blue">We werken met een aantal geabstraheerde interface-elementen. Deze worden gevuld met tekst, iconen
+<p>We werken met een aantal geabstraheerde interface-elementen. Deze worden gevuld met tekst, iconen
 en fotografie.</p>
 
-<p class="green-on-blue">Creëer een compositie waar de elementen op elkaars aanwezigheid lijken te reageren; creëer
+<p>Creëer een compositie waar de elementen op elkaars aanwezigheid lijken te reageren; creëer
 interactie.</p>
 
 <div class='solidblock'>
@@ -20,7 +20,7 @@ interactie.</p>
     <Bar class="purple-on-blue" style="flex-grow: 1"></Bar>
     <Slider class="blue-on-purple rounded" style="flex-grow: 2"></Slider>
     <Bar class="blue-on-purple rounded" style="flex-basis: 70%"></Bar>
-    <Square class="blue-on-purple pilled" style="padding: .3rem"><Icon cr="camera" /></Square>
+    <Square class="blue-on-purple pilled" style="padding: .4rem"><Icon name="camera" /></Square>
     <Bar class="purple-on-blue pilled" style="flex-grow:2"></Bar>
   </Codestring>
 </div>
