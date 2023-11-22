@@ -6,6 +6,7 @@
   <CollapsingColumns>
     <Microsites class="rounded title-outset-right" />
     <Codestring>
+      <Bar class="blue-on-white pilled">Nieuw!</Bar>
       <Bar class="blue-on-purple rounded">Information <Icon name="search" style="height: 2rem; margin-left: .5rem; margin-bottom: -.4rem;"/></Bar>
       <Square class="blue-on-green pilled" style="padding: .3rem;"><Icon name="heart" alt="loves"/></Square>
       <Slider class="blue-on-white pilled" bgtext="free">to be</Slider>
